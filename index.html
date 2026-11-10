@@ -1,1 +1,43 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dungeon Loot Tracker application">
+    <title>Dungeon Loot Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Dungeon Loot Tracker</h1>
+        <p>Add loot items and calculate their total value.</p>
+
+        <section aria-labelledby="addHeading">
+            <h2 id="addHeading">Add Loot</h2>
+
+            <label for="lootName">Loot Name:</label>
+            <input type="text" id="lootName">
+
+            <label for="lootValue">Loot Value:</label>
+            <input type="number" id="lootValue" step="any">
+
+            <button type="button" id="addLoot">Add Loot</button>
+
+            <p id="message" role="status" aria-live="polite"></p>
+        </section>
+
+        <section aria-labelledby="listHeading">
+            <h2 id="listHeading">Loot Items</h2>
+            <ul id="lootList"></ul>
+        </section>
+
+        <section aria-labelledby="totalHeading">
+            <h2 id="totalHeading">Total Loot Value</h2>
+            <p id="totalValue" aria-live="polite">0</p>
+        </section>
+    </main>
+</body>
+</html>
+
